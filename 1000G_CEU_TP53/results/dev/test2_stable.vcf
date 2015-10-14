@@ -1,6 +1,6 @@
 ##fileformat=VCFv4.1
 ##fileDate=20151014
-##source=NBRR_caller_beta
+##source=needlestack
 ##reference=17.fasta.gz
 ##contig=<ID=17,length=81195210>
 ##phasing=none
