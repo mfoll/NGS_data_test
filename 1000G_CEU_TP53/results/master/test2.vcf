@@ -1,6 +1,6 @@
 ##fileformat=VCFv4.1
-##fileDate=20151016
-##source=needlestack
+##fileDate=20151019
+##source=needlestack v0.2
 ##reference=17.fasta.gz
 ##contig=<ID=17,length=81195210>
 ##phasing=none
