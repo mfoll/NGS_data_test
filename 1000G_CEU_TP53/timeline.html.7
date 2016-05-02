@@ -81,16 +81,16 @@ var colors = d3.scale.category20c().domain(d3.range(0,20)).range()
 function c1(index) { return "#bdbdbd"; }
 function c2(index) { return colors[index % 16]; } // <-- note: uses only the first 16 colors
 
-var elapsed="56.6s"
-var beginningMillis=1462197733364;
-var endingMillis=1462197789984;
+var elapsed="59.9s"
+var beginningMillis=1462198997608;
+var endingMillis=1462199057527;
 var data=[
-{"label": "bed (1)", "times": [{"starting_time": 1462197737245, "ending_time": 1462197737398, "color":c1(0)}, {"starting_time": 1462197737398, "ending_time": 1462197739312, "color":c2(0), "label": "2.1s \/ -"}]},
-{"label": "split_bed (1)", "times": [{"starting_time": 1462197739566, "ending_time": 1462197739634, "color":c1(1)}, {"starting_time": 1462197739634, "ending_time": 1462197739805, "color":c2(1), "label": "2.7s \/ 69.6 MB"}, {"starting_time": 1462197739805, "ending_time": 1462197742299, "color":c1(1)}]},
-{"label": "samtools_mpileup (17_7572814-17_7579962_regions)", "times": [{"starting_time": 1462197742488, "ending_time": 1462197742599, "color":c1(2)}, {"starting_time": 1462197742599, "ending_time": 1462197752878, "color":c2(2), "label": "12.4s \/ 140.7 MB"}, {"starting_time": 1462197752878, "ending_time": 1462197754849, "color":c1(2)}]},
-{"label": "mpileup2table (17_7572814-17_7579962_regions)", "times": [{"starting_time": 1462197755256, "ending_time": 1462197755270, "color":c1(3)}, {"starting_time": 1462197755270, "ending_time": 1462197772043, "color":c2(3), "label": "18.5s \/ 44.7 MB"}, {"starting_time": 1462197772043, "ending_time": 1462197773719, "color":c1(3)}]},
-{"label": "R_regression (17_7572814-17_7579962_regions)", "times": [{"starting_time": 1462197773847, "ending_time": 1462197773920, "color":c1(4)}, {"starting_time": 1462197773920, "ending_time": 1462197785864, "color":c2(4), "label": "14.1s \/ 135.4 MB"}, {"starting_time": 1462197785864, "ending_time": 1462197787970, "color":c1(4)}]},
-{"label": "collect_vcf_result (1)", "times": [{"starting_time": 1462197788074, "ending_time": 1462197788171, "color":c1(5)}, {"starting_time": 1462197788171, "ending_time": 1462197789963, "color":c2(5), "label": "1.9s \/ -"}]}
+{"label": "bed (1)", "times": [{"starting_time": 1462199001808, "ending_time": 1462199001880, "color":c1(0)}, {"starting_time": 1462199001880, "ending_time": 1462199004332, "color":c2(0), "label": "2.5s \/ -"}]},
+{"label": "split_bed (1)", "times": [{"starting_time": 1462199004483, "ending_time": 1462199004546, "color":c1(1)}, {"starting_time": 1462199004546, "ending_time": 1462199004753, "color":c2(1), "label": "2.3s \/ 68.2 MB"}, {"starting_time": 1462199004753, "ending_time": 1462199006789, "color":c1(1)}]},
+{"label": "samtools_mpileup (17_7572814-17_7579962_regions)", "times": [{"starting_time": 1462199006998, "ending_time": 1462199007088, "color":c1(2)}, {"starting_time": 1462199007088, "ending_time": 1462199018175, "color":c2(2), "label": "13s \/ 140.7 MB"}, {"starting_time": 1462199018175, "ending_time": 1462199019994, "color":c1(2)}]},
+{"label": "mpileup2table (17_7572814-17_7579962_regions)", "times": [{"starting_time": 1462199020242, "ending_time": 1462199020295, "color":c1(3)}, {"starting_time": 1462199020295, "ending_time": 1462199037889, "color":c2(3), "label": "19.6s \/ 44.8 MB"}, {"starting_time": 1462199037889, "ending_time": 1462199039816, "color":c1(3)}]},
+{"label": "R_regression (17_7572814-17_7579962_regions)", "times": [{"starting_time": 1462199039971, "ending_time": 1462199040017, "color":c1(4)}, {"starting_time": 1462199040017, "ending_time": 1462199052907, "color":c2(4), "label": "14.8s \/ 135.4 MB"}, {"starting_time": 1462199052907, "ending_time": 1462199054753, "color":c1(4)}]},
+{"label": "collect_vcf_result (1)", "times": [{"starting_time": 1462199054849, "ending_time": 1462199054853, "color":c1(5)}, {"starting_time": 1462199054853, "ending_time": 1462199054933, "color":c2(5), "label": "2.6s \/ 19.6 MB"}, {"starting_time": 1462199054933, "ending_time": 1462199057495, "color":c1(5)}]}
 ]
 
 
