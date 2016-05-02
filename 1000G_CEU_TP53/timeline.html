@@ -81,25 +81,12 @@ var colors = d3.scale.category20c().domain(d3.range(0,20)).range()
 function c1(index) { return "#bdbdbd"; }
 function c2(index) { return colors[index % 16]; } // <-- note: uses only the first 16 colors
 
-var elapsed="23.7s"
-var beginningMillis=1462200796082;
-var endingMillis=1462200819787;
+var elapsed="8.5s"
+var beginningMillis=1462202812474;
+var endingMillis=1462202820968;
 var data=[
-{"label": "bed (1)", "times": [{"starting_time": 1462200798907, "ending_time": 1462200798968, "color":c1(0)}, {"starting_time": 1462200798968, "ending_time": 1462200800907, "color":c2(0), "label": "2s \/ -"}]},
-{"label": "split_bed (1)", "times": [{"starting_time": 1462200801146, "ending_time": 1462200801213, "color":c1(1)}, {"starting_time": 1462200801213, "ending_time": 1462200801580, "color":c2(1), "label": "2.1s \/ 78.5 MB"}, {"starting_time": 1462200801580, "ending_time": 1462200803214, "color":c1(1)}]},
-{"label": "samtools_mpileup (17_7578233-17_7578260_regions)", "times": [{"starting_time": 1462200803737, "ending_time": 1462200803816, "color":c1(2)}, {"starting_time": 1462200803816, "ending_time": 1462200807805, "color":c2(2), "label": "6.5s \/ 140.7 MB"}, {"starting_time": 1462200807805, "ending_time": 1462200810236, "color":c1(2)}]},
-{"label": "samtools_mpileup (17_7578176-17_7578204_regions)", "times": [{"starting_time": 1462200803746, "ending_time": 1462200803817, "color":c1(2)}, {"starting_time": 1462200803817, "ending_time": 1462200807606, "color":c2(2), "label": "6s \/ 140.7 MB"}, {"starting_time": 1462200807606, "ending_time": 1462200809762, "color":c1(2)}]},
-{"label": "samtools_mpileup (17_7578261-17_7578288_regions)", "times": [{"starting_time": 1462200803761, "ending_time": 1462200803820, "color":c1(2)}, {"starting_time": 1462200803820, "ending_time": 1462200808041, "color":c2(2), "label": "6.7s \/ 140.7 MB"}, {"starting_time": 1462200808041, "ending_time": 1462200810471, "color":c1(2)}]},
-{"label": "samtools_mpileup (17_7578205-17_7578232_regions)", "times": [{"starting_time": 1462200803770, "ending_time": 1462200803821, "color":c1(2)}, {"starting_time": 1462200803821, "ending_time": 1462200806601, "color":c2(2), "label": "5.1s \/ 140.7 MB"}, {"starting_time": 1462200806601, "ending_time": 1462200808892, "color":c1(2)}]},
-{"label": "mpileup2table (17_7578205-17_7578232_regions)", "times": [{"starting_time": 1462200809167, "ending_time": 1462200809249, "color":c1(3)}, {"starting_time": 1462200809249, "ending_time": 1462200810662, "color":c2(3), "label": "4.2s \/ 44.6 MB"}, {"starting_time": 1462200810662, "ending_time": 1462200813376, "color":c1(3)}]},
-{"label": "mpileup2table (17_7578176-17_7578204_regions)", "times": [{"starting_time": 1462200809896, "ending_time": 1462200809962, "color":c1(3)}, {"starting_time": 1462200809962, "ending_time": 1462200811921, "color":c2(3), "label": "4.4s \/ 44.5 MB"}, {"starting_time": 1462200811921, "ending_time": 1462200814291, "color":c1(3)}]},
-{"label": "mpileup2table (17_7578233-17_7578260_regions)", "times": [{"starting_time": 1462200810319, "ending_time": 1462200810336, "color":c1(3)}, {"starting_time": 1462200810336, "ending_time": 1462200812252, "color":c2(3), "label": "3.7s \/ 44.6 MB"}, {"starting_time": 1462200812252, "ending_time": 1462200814059, "color":c1(3)}]},
-{"label": "mpileup2table (17_7578261-17_7578288_regions)", "times": [{"starting_time": 1462200810565, "ending_time": 1462200810672, "color":c1(3)}, {"starting_time": 1462200810672, "ending_time": 1462200812606, "color":c2(3), "label": "3.6s \/ 44.6 MB"}, {"starting_time": 1462200812606, "ending_time": 1462200814170, "color":c1(3)}]},
-{"label": "R_regression (17_7578205-17_7578232_regions)", "times": [{"starting_time": 1462200813568, "ending_time": 1462200813576, "color":c1(4)}, {"starting_time": 1462200813576, "ending_time": 1462200816730, "color":c2(4), "label": "5.2s \/ 109.4 MB"}, {"starting_time": 1462200816730, "ending_time": 1462200818754, "color":c1(4)}]},
-{"label": "R_regression (17_7578233-17_7578260_regions)", "times": [{"starting_time": 1462200814224, "ending_time": 1462200814288, "color":c1(4)}, {"starting_time": 1462200814288, "ending_time": 1462200816044, "color":c2(4), "label": "3.8s \/ 107 MB"}, {"starting_time": 1462200816044, "ending_time": 1462200818071, "color":c1(4)}]},
-{"label": "R_regression (17_7578261-17_7578288_regions)", "times": [{"starting_time": 1462200814385, "ending_time": 1462200814391, "color":c1(4)}, {"starting_time": 1462200814391, "ending_time": 1462200816790, "color":c2(4), "label": "4.1s \/ 105.2 MB"}, {"starting_time": 1462200816790, "ending_time": 1462200818516, "color":c1(4)}]},
-{"label": "R_regression (17_7578176-17_7578204_regions)", "times": [{"starting_time": 1462200814433, "ending_time": 1462200814492, "color":c1(4)}, {"starting_time": 1462200814492, "ending_time": 1462200816568, "color":c2(4), "label": "3.9s \/ 105 MB"}, {"starting_time": 1462200816568, "ending_time": 1462200818290, "color":c1(4)}]},
-{"label": "collect_vcf_result (1)", "times": [{"starting_time": 1462200818825, "ending_time": 1462200818854, "color":c1(5)}, {"starting_time": 1462200818854, "ending_time": 1462200818907, "color":c2(5), "label": "850ms \/ 19.6 MB"}, {"starting_time": 1462200818907, "ending_time": 1462200819675, "color":c1(5)}]}
+{"label": "bed (1)", "times": [{"starting_time": 1462202816267, "ending_time": 1462202816405, "color":c1(0)}, {"starting_time": 1462202816405, "ending_time": 1462202818292, "color":c2(0), "label": "2s \/ -"}]},
+{"label": "split_bed (1)", "times": [{"starting_time": 1462202818506, "ending_time": 1462202818593, "color":c1(1)}, {"starting_time": 1462202818593, "ending_time": 1462202818759, "color":c2(1), "label": "2.3s \/ 73.2 MB"}, {"starting_time": 1462202818759, "ending_time": 1462202820840, "color":c1(1)}]}
 ]
 
 
