@@ -81,12 +81,12 @@ var colors = d3.scale.category20c().domain(d3.range(0,20)).range()
 function c1(index) { return "#bdbdbd"; }
 function c2(index) { return colors[index % 16]; } // <-- note: uses only the first 16 colors
 
-var elapsed="8.2s"
-var beginningMillis=1462263213733;
-var endingMillis=1462263221905;
+var elapsed="8.7s"
+var beginningMillis=1462265057843;
+var endingMillis=1462265066497;
 var data=[
-{"label": "bed (1)", "times": [{"starting_time": 1462263217203, "ending_time": 1462263217287, "color":c1(0)}, {"starting_time": 1462263217287, "ending_time": 1462263219618, "color":c2(0), "label": "2.4s \/ -"}]},
-{"label": "split_bed (1)", "times": [{"starting_time": 1462263219736, "ending_time": 1462263219819, "color":c1(1)}, {"starting_time": 1462263219819, "ending_time": 1462263219986, "color":c2(1), "label": "2s \/ 73.1 MB"}, {"starting_time": 1462263219986, "ending_time": 1462263221767, "color":c1(1)}]}
+{"label": "bed (1)", "times": [{"starting_time": 1462265062118, "ending_time": 1462265062194, "color":c1(0)}, {"starting_time": 1462265062194, "ending_time": 1462265064283, "color":c2(0), "label": "2.2s \/ -"}]},
+{"label": "split_bed (1)", "times": [{"starting_time": 1462265064450, "ending_time": 1462265064484, "color":c1(1)}, {"starting_time": 1462265064484, "ending_time": 1462265064692, "color":c2(1), "label": "1.9s \/ 69.5 MB"}, {"starting_time": 1462265064692, "ending_time": 1462265066307, "color":c1(1)}]}
 ]
 
 
