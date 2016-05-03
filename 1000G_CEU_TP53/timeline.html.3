@@ -81,16 +81,16 @@ var colors = d3.scale.category20c().domain(d3.range(0,20)).range()
 function c1(index) { return "#bdbdbd"; }
 function c2(index) { return colors[index % 16]; } // <-- note: uses only the first 16 colors
 
-var elapsed="58.9s"
-var beginningMillis=1462260697751;
-var endingMillis=1462260756673;
+var elapsed="1m 12s"
+var beginningMillis=1462263081962;
+var endingMillis=1462263153861;
 var data=[
-{"label": "bed (1)", "times": [{"starting_time": 1462260701552, "ending_time": 1462260701679, "color":c1(0)}, {"starting_time": 1462260701679, "ending_time": 1462260703727, "color":c2(0), "label": "2.2s \/ -"}]},
-{"label": "split_bed (1)", "times": [{"starting_time": 1462260703907, "ending_time": 1462260703940, "color":c1(1)}, {"starting_time": 1462260703940, "ending_time": 1462260704136, "color":c2(1), "label": "3s \/ 68 MB"}, {"starting_time": 1462260704136, "ending_time": 1462260706890, "color":c1(1)}]},
-{"label": "samtools_mpileup (17_7572814-17_7579962_regions)", "times": [{"starting_time": 1462260707099, "ending_time": 1462260707191, "color":c1(2)}, {"starting_time": 1462260707191, "ending_time": 1462260718266, "color":c2(2), "label": "13s \/ 140.7 MB"}, {"starting_time": 1462260718266, "ending_time": 1462260720121, "color":c1(2)}]},
-{"label": "mpileup2table (17_7572814-17_7579962_regions)", "times": [{"starting_time": 1462260720373, "ending_time": 1462260720427, "color":c1(3)}, {"starting_time": 1462260720427, "ending_time": 1462260738396, "color":c2(3), "label": "19.9s \/ 44.7 MB"}, {"starting_time": 1462260738396, "ending_time": 1462260740311, "color":c1(3)}]},
-{"label": "R_regression (17_7572814-17_7579962_regions)", "times": [{"starting_time": 1462260740453, "ending_time": 1462260740512, "color":c1(4)}, {"starting_time": 1462260740512, "ending_time": 1462260752782, "color":c2(4), "label": "14s \/ 135.4 MB"}, {"starting_time": 1462260752782, "ending_time": 1462260754496, "color":c1(4)}]},
-{"label": "collect_vcf_result (1)", "times": [{"starting_time": 1462260754603, "ending_time": 1462260754695, "color":c1(5)}, {"starting_time": 1462260754695, "ending_time": 1462260754822, "color":c2(5), "label": "2s \/ 19.6 MB"}, {"starting_time": 1462260754822, "ending_time": 1462260756648, "color":c1(5)}]}
+{"label": "bed (1)", "times": [{"starting_time": 1462263085643, "ending_time": 1462263085730, "color":c1(0)}, {"starting_time": 1462263085730, "ending_time": 1462263091538, "color":c2(0), "label": "5.9s \/ -"}]},
+{"label": "split_bed (1)", "times": [{"starting_time": 1462263091646, "ending_time": 1462263091738, "color":c1(1)}, {"starting_time": 1462263091738, "ending_time": 1462263091917, "color":c2(1), "label": "4.8s \/ 77 MB"}, {"starting_time": 1462263091917, "ending_time": 1462263096456, "color":c1(1)}]},
+{"label": "samtools_mpileup (17_7572814-17_7579962_regions)", "times": [{"starting_time": 1462263096654, "ending_time": 1462263096758, "color":c1(2)}, {"starting_time": 1462263096758, "ending_time": 1462263106970, "color":c2(2), "label": "18s \/ 140.7 MB"}, {"starting_time": 1462263106970, "ending_time": 1462263114673, "color":c1(2)}]},
+{"label": "mpileup2table (17_7572814-17_7579962_regions)", "times": [{"starting_time": 1462263115042, "ending_time": 1462263115058, "color":c1(3)}, {"starting_time": 1462263115058, "ending_time": 1462263131857, "color":c2(3), "label": "20.1s \/ 44.7 MB"}, {"starting_time": 1462263131857, "ending_time": 1462263135168, "color":c1(3)}]},
+{"label": "R_regression (17_7572814-17_7579962_regions)", "times": [{"starting_time": 1462263135322, "ending_time": 1462263135369, "color":c1(4)}, {"starting_time": 1462263135369, "ending_time": 1462263147141, "color":c2(4), "label": "16.5s \/ 135.4 MB"}, {"starting_time": 1462263147141, "ending_time": 1462263151811, "color":c1(4)}]},
+{"label": "collect_vcf_result (1)", "times": [{"starting_time": 1462263151876, "ending_time": 1462263151911, "color":c1(5)}, {"starting_time": 1462263151911, "ending_time": 1462263151967, "color":c2(5), "label": "1.9s \/ 19.6 MB"}, {"starting_time": 1462263151967, "ending_time": 1462263153748, "color":c1(5)}]}
 ]
 
 

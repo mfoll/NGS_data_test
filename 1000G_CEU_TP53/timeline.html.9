@@ -81,16 +81,16 @@ var colors = d3.scale.category20c().domain(d3.range(0,20)).range()
 function c1(index) { return "#bdbdbd"; }
 function c2(index) { return colors[index % 16]; } // <-- note: uses only the first 16 colors
 
-var elapsed="1m 3s"
-var beginningMillis=1462259934670;
-var endingMillis=1462259997235;
+var elapsed="58.9s"
+var beginningMillis=1462260697751;
+var endingMillis=1462260756673;
 var data=[
-{"label": "bed (1)", "times": [{"starting_time": 1462259938549, "ending_time": 1462259938636, "color":c1(0)}, {"starting_time": 1462259938636, "ending_time": 1462259940945, "color":c2(0), "label": "2.4s \/ -"}]},
-{"label": "split_bed (1)", "times": [{"starting_time": 1462259941121, "ending_time": 1462259941160, "color":c1(1)}, {"starting_time": 1462259941160, "ending_time": 1462259941356, "color":c2(1), "label": "2.5s \/ 68.3 MB"}, {"starting_time": 1462259941356, "ending_time": 1462259943627, "color":c1(1)}]},
-{"label": "samtools_mpileup (17_7572814-17_7579962_regions)", "times": [{"starting_time": 1462259943865, "ending_time": 1462259943928, "color":c1(2)}, {"starting_time": 1462259943928, "ending_time": 1462259955458, "color":c2(2), "label": "15.2s \/ 140.7 MB"}, {"starting_time": 1462259955458, "ending_time": 1462259959075, "color":c1(2)}]},
-{"label": "mpileup2table (17_7572814-17_7579962_regions)", "times": [{"starting_time": 1462259959319, "ending_time": 1462259959392, "color":c1(3)}, {"starting_time": 1462259959392, "ending_time": 1462259977334, "color":c2(3), "label": "20.2s \/ 44.7 MB"}, {"starting_time": 1462259977334, "ending_time": 1462259979504, "color":c1(3)}]},
-{"label": "R_regression (17_7572814-17_7579962_regions)", "times": [{"starting_time": 1462259979647, "ending_time": 1462259979705, "color":c1(4)}, {"starting_time": 1462259979705, "ending_time": 1462259992500, "color":c2(4), "label": "15.4s \/ 135.4 MB"}, {"starting_time": 1462259992500, "ending_time": 1462259995010, "color":c1(4)}]},
-{"label": "collect_vcf_result (1)", "times": [{"starting_time": 1462259995116, "ending_time": 1462259995211, "color":c1(5)}, {"starting_time": 1462259995211, "ending_time": 1462259995280, "color":c2(5), "label": "2.1s \/ 19.6 MB"}, {"starting_time": 1462259995280, "ending_time": 1462259997207, "color":c1(5)}]}
+{"label": "bed (1)", "times": [{"starting_time": 1462260701552, "ending_time": 1462260701679, "color":c1(0)}, {"starting_time": 1462260701679, "ending_time": 1462260703727, "color":c2(0), "label": "2.2s \/ -"}]},
+{"label": "split_bed (1)", "times": [{"starting_time": 1462260703907, "ending_time": 1462260703940, "color":c1(1)}, {"starting_time": 1462260703940, "ending_time": 1462260704136, "color":c2(1), "label": "3s \/ 68 MB"}, {"starting_time": 1462260704136, "ending_time": 1462260706890, "color":c1(1)}]},
+{"label": "samtools_mpileup (17_7572814-17_7579962_regions)", "times": [{"starting_time": 1462260707099, "ending_time": 1462260707191, "color":c1(2)}, {"starting_time": 1462260707191, "ending_time": 1462260718266, "color":c2(2), "label": "13s \/ 140.7 MB"}, {"starting_time": 1462260718266, "ending_time": 1462260720121, "color":c1(2)}]},
+{"label": "mpileup2table (17_7572814-17_7579962_regions)", "times": [{"starting_time": 1462260720373, "ending_time": 1462260720427, "color":c1(3)}, {"starting_time": 1462260720427, "ending_time": 1462260738396, "color":c2(3), "label": "19.9s \/ 44.7 MB"}, {"starting_time": 1462260738396, "ending_time": 1462260740311, "color":c1(3)}]},
+{"label": "R_regression (17_7572814-17_7579962_regions)", "times": [{"starting_time": 1462260740453, "ending_time": 1462260740512, "color":c1(4)}, {"starting_time": 1462260740512, "ending_time": 1462260752782, "color":c2(4), "label": "14s \/ 135.4 MB"}, {"starting_time": 1462260752782, "ending_time": 1462260754496, "color":c1(4)}]},
+{"label": "collect_vcf_result (1)", "times": [{"starting_time": 1462260754603, "ending_time": 1462260754695, "color":c1(5)}, {"starting_time": 1462260754695, "ending_time": 1462260754822, "color":c2(5), "label": "2s \/ 19.6 MB"}, {"starting_time": 1462260754822, "ending_time": 1462260756648, "color":c1(5)}]}
 ]
 
 

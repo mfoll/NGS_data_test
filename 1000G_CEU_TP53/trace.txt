@@ -1,3 +1,3 @@
 task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
-1	b6/709827	51651	bed (1)	COMPLETED	0	2016-05-03 07:33:47.290	3.2s	3.1s	-	-	-	-	-
-2	49/e8b078	51725	split_bed (1)	FAILED	1	2016-05-03 07:33:50.706	2.6s	185ms	0.0%	1.7 MB	33.5 MB	75.6 KB	265 B
+1	e4/cdb653	51619	bed (1)	COMPLETED	0	2016-05-03 08:13:37.203	2.4s	2.3s	-	-	-	-	-
+2	cc/280728	51703	split_bed (1)	FAILED	1	2016-05-03 08:13:39.736	2s	167ms	0.0%	12.1 MB	73.1 MB	866.1 KB	265 B
