@@ -1,0 +1,42 @@
+##fileformat=VCFv4.1
+##fileDate=20160513
+##source=needlestack v1.0b
+##command=nextflow run /home/ubuntu/needlestack/needlestack.nf -with-docker iarcbioinfo/needlestack --region 17:7580000-7580004--nsplit 4 --fasta_ref 17.fasta.gz --bam_folder BAM/
+##repository=null
+##commitId=null
+##revision=null
+##container=iarcbioinfo/needlestack
+##nextflow=v0.18.3
+##samtools=samtools 1.3.1 Using htslib 1.3.1 Copyright (C) 2016 Genome Research Ltd.
+##bedtools=bedtools v2.25.0
+##Rscript=R scripting front-end version 3.3.0 (2016-05-03)
+##perl=v5.20.2
+##reference=17.fasta.gz
+##contig=<ID=17,length=81195210>
+##phasing=none
+##filter="QVAL > 50 & SOR_SNV < 100 & SOR_INDEL < 100 & min(AO) >= 5 & min(DP) >= 50"
+##INFO=<ID=TYPE,Number=1,Type=String,Description="The type of allele, either snp, ins or del">
+##INFO=<ID=NS,Number=1,Type=Integer,Description="Number of samples with data">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total read depth">
+##INFO=<ID=RO,Number=1,Type=Integer,Description="Total reference allele observation count">
+##INFO=<ID=AO,Number=1,Type=Integer,Description="Total alternate allele observation count">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Estimated allele frequency in the range [0,1]">
+##INFO=<ID=SRF,Number=1,Type=Integer,Description="Total number of reference observations on the forward strand">
+##INFO=<ID=SRR,Number=1,Type=Integer,Description="Total number of reference observations on the reverse strand">
+##INFO=<ID=SAF,Number=1,Type=Integer,Description="Total number of alternate observations on the forward strand">
+##INFO=<ID=SAR,Number=1,Type=Integer,Description="Total number of alternate observations on the reverse strand">
+##INFO=<ID=SOR,Number=1,Type=Float,Description="Total Symmetric Odds Ratio of 2x2 contingency table to detect strand bias">
+##INFO=<ID=RVSB,Number=1,Type=Float,Description="Total Relative Variant Strand Bias">
+##INFO=<ID=ERR,Number=1,Type=Float,Description="Estimated error rate for the alternate allele">
+##INFO=<ID=SIG,Number=1,Type=Float,Description="Estimated overdispersion for the alternate allele">
+##INFO=<ID=CONT,Number=1,Type=String,Description="Context of the reference sequence">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=QVAL,Number=1,Type=Float,Description="Phred-scaled qvalue for not being an error">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
+##FORMAT=<ID=RO,Number=1,Type=Integer,Description="Reference allele observation count">
+##FORMAT=<ID=AO,Number=1,Type=Integer,Description="Alternate allele observation count">
+##FORMAT=<ID=AF,Number=1,Type=Float,Description="Allele fraction of the alternate allele with regard to reference">
+##FORMAT=<ID=SB,Number=4,Type=Integer,Description="Per-sample component statistics to detect strand bias as SRF,SRR,SAF,SAR">
+##FORMAT=<ID=SOR,Number=1,Type=Float,Description="Symmetric Odds Ratio of 2x2 contingency table to detect strand bias">
+##FORMAT=<ID=RVSB,Number=1,Type=Float,Description="Relative Variant Strand Bias">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	NA06984	NA06985	NA06986	NA06994	NA07000	NA07037	NA07056	NA07347	NA07357	NA10847	NA10851	NA11829	NA11830	NA11831	NA11832	NA11840	NA11843	NA11892	NA11893	NA11894	NA11918	NA11919	NA11920	NA11930	NA11931	NA11932	NA11933	NA11992	NA11994	NA11995	NA12003	NA12004	NA12005	NA12006	NA12043	NA12044	NA12045	NA12046	NA12058	NA12144	NA12154	NA12155	NA12156	NA12234	NA12249	NA12272	NA12273	NA12275	NA12282	NA12283	NA12286	NA12287	NA12340	NA12341	NA12342	NA12347	NA12348	NA12383	NA12399	NA12400	NA12413	NA12414	NA12546	NA12716	NA12717	NA12718	NA12748	NA12749	NA12750	NA12760	NA12761	NA12762	NA12763	NA12775	NA12776	NA12777	NA12778	NA12812	NA12813	NA12814	NA12815	NA12827	NA12828	NA12829	NA12830	NA12842	NA12843	NA12872	NA12873	NA12874	NA12878	NA12889	NA12890
