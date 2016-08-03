@@ -1,5 +1,5 @@
 ##fileformat=VCFv4.1
-##fileDate=20160802
+##fileDate=20160803
 ##source=needlestack v1.0b
 ##command=nextflow run /home/ubuntu/needlestack/needlestack.nf -with-docker iarcbioinfo/needlestack --region 17:7572816-7572816 --fasta_ref 17.fasta.gz --bam_folder BAM/ --min_AO 0 --all_SNVs
 ##repository=null
