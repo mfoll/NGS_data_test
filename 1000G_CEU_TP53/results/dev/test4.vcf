@@ -31,6 +31,7 @@
 ##INFO=<ID=ERR,Number=1,Type=Float,Description="Estimated error rate for the alternate allele">
 ##INFO=<ID=SIG,Number=1,Type=Float,Description="Estimated overdispersion for the alternate allele">
 ##INFO=<ID=CONT,Number=1,Type=String,Description="Context of the reference sequence">
+##INFO=<ID=WARN,Number=1,Type=String,Description="Warning message when position is processed specifically">
 ##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
 ##FORMAT=<ID=QVAL,Number=1,Type=Float,Description="Phred-scaled qvalue for not being an error">
 ##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
