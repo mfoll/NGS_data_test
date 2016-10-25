@@ -1,5 +1,5 @@
 ##fileformat=VCFv4.1
-##fileDate=20161024
+##fileDate=20161025
 ##source=needlestack v1.0b
 ##command=nextflow run /home/ubuntu/needlestack/needlestack.nf -with-docker iarcbioinfo/needlestack --bed TP53_exon2_11.bed --nsplit 4 --fasta_ref 17.fasta.gz --bam_folder BAM/
 ##repository=null
