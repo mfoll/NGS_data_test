@@ -34,6 +34,7 @@
 ##INFO=<ID=WARN,Number=1,Type=String,Description="Warning message when position is processed specifically">
 ##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
 ##FORMAT=<ID=QVAL,Number=1,Type=Float,Description="Phred-scaled qvalue for not being an error">
+##FORMAT=<ID=QVAL_INV,Number=1,Type=Float,Description="Phred-scaled qvalue for not being an error in position where reference is switched">
 ##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
 ##FORMAT=<ID=RO,Number=1,Type=Integer,Description="Reference allele observation count">
 ##FORMAT=<ID=AO,Number=1,Type=Integer,Description="Alternate allele observation count">
