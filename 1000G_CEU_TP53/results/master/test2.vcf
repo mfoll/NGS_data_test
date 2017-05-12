@@ -1,15 +1,15 @@
 ##fileformat=VCFv4.1
-##fileDate=20170217
+##fileDate=20170512
 ##source=needlestack v1.0
 ##command=nextflow run /home/ubuntu/needlestack/needlestack.nf -with-docker iarcbioinfo/needlestack --bed TP53_exon2_11.bed --nsplit 4 --fasta_ref 17.fasta.gz --bam_folder BAM/
 ##repository=null
 ##commitId=null
 ##revision=null
 ##container=iarcbioinfo/needlestack
-##nextflow=v0.23.3
+##nextflow=v0.24.3
 ##samtools=samtools 1.3.1 Using htslib 1.3.1 Copyright (C) 2016 Genome Research Ltd.
 ##bedtools=bedtools v2.25.0
-##Rscript=R scripting front-end version 3.3.2 (2016-10-31)
+##Rscript=R scripting front-end version 3.3.3 (2017-03-06)
 ##perl=v5.20.2
 ##reference=17.fasta.gz
 ##contig=<ID=17,length=81195210>
