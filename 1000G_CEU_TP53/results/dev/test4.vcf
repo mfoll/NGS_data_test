@@ -1,12 +1,12 @@
 ##fileformat=VCFv4.1
-##fileDate=20170821
+##fileDate=20170907
 ##source=needlestack v1.0b
 ##command=nextflow run /home/ubuntu/needlestack/needlestack.nf -with-docker iarcbioinfo/needlestack --region 17:7572816-7572816 --ref 17.fasta.gz --bam_folder BAM/ --output_vcf all_variants.vcf --min_ao 0 --all_SNVs
 ##repository=null
 ##commitId=null
 ##revision=null
 ##container=iarcbioinfo/needlestack
-##nextflow=v0.25.6
+##nextflow=v0.25.7
 ##samtools=samtools 1.3.1 Using htslib 1.3.1 Copyright (C) 2016 Genome Research Ltd.
 ##bedtools=bedtools v2.25.0
 ##Rscript=R scripting front-end version 3.3.3 (2017-03-06)
