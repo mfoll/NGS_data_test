@@ -13,7 +13,7 @@
 ##reference=17.fasta.gz
 ##contig=<ID=17,length=81195210>
 ##phasing=none
-##filter="QVAL > 50 & SOR_SNV < 100 & SOR_INDEL < 100 & min(AO) >= 0 & min(DP) >= 30"
+##filter="QVAL > 50 & SOR_SNV < 100 & SOR_INDEL < 100 & min(AO) >= 0 & min(AF) >= 0 & min(DP) >= 30"
 ##INFO=<ID=TYPE,Number=1,Type=String,Description="The type of allele, either snp, ins or del">
 ##INFO=<ID=NS,Number=1,Type=Integer,Description="Number of samples with data">
 ##INFO=<ID=DP,Number=1,Type=Integer,Description="Total read depth">
