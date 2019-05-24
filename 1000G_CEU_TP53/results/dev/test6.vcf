@@ -1,6 +1,6 @@
 ##fileformat=VCFv4.1
 ##fileDate=20190524
-##source=needlestack v1.1
+##source=needlestack v1.2b
 ##command=nextflow run /home/circleci/project/needlestack.nf -with-docker iarcbioinfo/needlestack --region 17:7580000-7580004--nsplit 4 --ref 17.fasta.gz --input_bams BAM/ --output_vcf all_variants.vcf
 ##repository=null
 ##commitId=null
